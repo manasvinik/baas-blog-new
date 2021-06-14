@@ -1,0 +1,131 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{ super() }}
+  <meta name="description" content="{{ article.summary|striptags }}">
+
+  <!-- https://codepen.io/anon/pen/aYPqEV -->
+
+  <script type="text/javascript">
+    
+    $(document).ready(function () {
+        var $form = $('#mc-embedded-subscribe-form')
+        if ($form.length > 0) {
+          $('form input[type="submit"]').bind('click', function (event) {
+            if (event) event.preventDefault()
+            register($form)
+          })
+        }
+      })
+
+      function register($form) {
+        $('#mc-embedded-subscribe').val('Robots Chomping...');
+        $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          cache: false,
+          dataType: 'json',
+          contentType: 'application/json; charset=utf-8',
+          error: function (err) { alert('Could not connect to the registration server. Please try again later.', err) },
+          success: function (data) {
+            $('#mc-embedded-subscribe').val('subscribe')
+            if (data.result === 'success') {
+              // Yeahhhh Success
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ffffff')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#27ae60')
+              $('#subscribe-result').html('<p>Thank you for subscribing. We will send you nothing but the most freshly brewed, fragrant articles on how to get things done.</p>')
+              $('#mce-EMAIL').val('')
+            } else {
+              // Something went wrong, do something to notify the user.
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ff8282')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#E73737')
+              $('#subscribe-result').html('<p>' + data.msg + '</p>')
+            }
+          }
+        })
+      };
+
+</script>
+
+
+{% endblock %}
+
+{% block title %}
+  {{ article.title|striptags }} {{ super() }}
+{% endblock %}
+
+{% block page_header %}
+  {{ article.title }}
+{% endblock %}
+
+{% block content %}
+
+  
+  <article class="article">
+    <h1>  {{ article.title }}</h1>
+
+    <header>
+      <ul class="list-inline text-muted">
+
+        <li class="list-inline-item" title="{{ article.date.isoformat() }}">
+           <img src="/images/manas.jpeg" alt="Avatar" class="avatar"> 
+        </li> 
+       
+        <li class="list-inline-item" title="{{ article.date.isoformat() }}">
+          <!-- <i class="fas fa-calendar"></i> -->
+          <span class="text-muted">{{ article.locale_date }}</span>
+        </li> | 
+
+          Filed under
+         <li class="list-inline-item">
+          <!-- <i class="fas fa-hashtag"></i> -->
+          <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+          <!-- <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> -->
+        </li>
+       
+       <!--  {% if not HIDE_AUTHORS and article.authors %}
+          <li class="list-inline-item">
+            <i class="fa fa-user-o"></i>
+            {% for author in article.authors %}
+              <a href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </li>
+        {% endif %} -->
+        <!-- {% if article.tags %} -->
+         <!--  <li class="list-inline-item">
+           
+            {% for tag in article.tags %}
+              <a href="{{ SITEURL }}/{{ tag.url }}" class="badge badge-warning">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+          </li> -->
+        <!-- {% endif %} -->
+      </ul>
+    </header>
+    <div class="content">
+      {{ article.content }}
+    </div>
+  </article>
+
+    <div class="reading signup-blog">
+      <div class="container text-center">
+        <p class="big-text">Think this makes sense?</p>
+        <p>Add your email here and we'll send you similar articles when we manage to stop procrastinating and write them.</p>
+          <form action="https://life.us18.list-manage.com/subscribe/post-json?u=14cad79873658b6346e7052da&amp;id=c9e90922cc&c=?"
+              method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="scrooge.mcduck@gmail.com" required>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+              </div>
+              <input type="submit" value="Get articles" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+              <div id="subscribe-result">
+              </div>
+          </form>
+      </div>
+    </div>
+  {% include 'include/comments.html' %}
+{% endblock %}

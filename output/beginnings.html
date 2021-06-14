@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- HTML Meta Tags -->
+    <title>Boss as a Service | Hire a boss, get stuff done</title>
+    <meta name="description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta itemprop="description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta itemprop="image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://bossasaservice.life">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta property="og:description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta property="og:image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta name="twitter:description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta name="twitter:image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/theme/images/icons/favicon.png" type="image/x-icon">
+
+  <!-- <title>  Boss as a Service: The Beginning | Boss as a Service
+</title> -->
+  <link rel="canonical" href="/beginnings.html">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="/theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="/theme/css/theme.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:40,600" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+  <meta name="description" content="Introduction and quick post on what this blog, and Boss as a Service, is all about.">
+
+  <!-- https://codepen.io/anon/pen/aYPqEV -->
+
+  <script type="text/javascript">
+    
+    $(document).ready(function () {
+        var $form = $('#mc-embedded-subscribe-form')
+        if ($form.length > 0) {
+          $('form input[type="submit"]').bind('click', function (event) {
+            if (event) event.preventDefault()
+            register($form)
+          })
+        }
+      })
+
+      function register($form) {
+        $('#mc-embedded-subscribe').val('Robots Chomping...');
+        $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          cache: false,
+          dataType: 'json',
+          contentType: 'application/json; charset=utf-8',
+          error: function (err) { alert('Could not connect to the registration server. Please try again later.', err) },
+          success: function (data) {
+            $('#mc-embedded-subscribe').val('subscribe')
+            if (data.result === 'success') {
+              // Yeahhhh Success
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ffffff')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#27ae60')
+              $('#subscribe-result').html('<p>Thank you for subscribing. We will send you nothing but the most freshly brewed, fragrant articles on how to get things done.</p>')
+              $('#mce-EMAIL').val('')
+            } else {
+              // Something went wrong, do something to notify the user.
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ff8282')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#E73737')
+              $('#subscribe-result').html('<p>' + data.msg + '</p>')
+            }
+          }
+        })
+      };
+
+</script>
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a href="/" class="navbar-brand d-flex w-50 mr-auto">
+        <span style="font-weight: 700; margin:0px 5px">Boss</span> As a <span style="font-weight: 700;margin: 0px 5px;"> Service</span>
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+             <!-- <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#howitworks">How it works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="https://bossasaservice.life/" class="btn btn-success">Join Boss As A Service</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <header class="header">
+   <!--  <div class="container"> -->
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <h1 class="title"><a href="/">Boss as a Service</a></h1>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://getpelican.com/" target="_blank">Pelican</a></li>
+          <li class="list-inline-item"><a href="https://www.python.org/" target="_blank">Python.org</a></li>
+          <li class="list-inline-item"><a href="https://palletsprojects.com/p/jinja/" target="_blank">Jinja2</a></li>
+          <li class="list-inline-item"><a href="#" target="_blank">You can modify those links in your config file</a></li>
+      </ul>
+  </div>
+</div> -->
+
+
+<section class="jumbo-blog col-xs-12 col-xs-offset-0 page-heading">
+  <div class="reading">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h1 class="blog-title">BaaS Blog</h1>
+        <p>A Blog about Productivity, Getting Stuff Done, and Keeping Sane While Trying to be Exceptional</p>
+        </div>
+      <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
+        <img src="/images/superhero.svg" class="rounded float-right header-superhero"> 
+      </div>
+    </div>
+  </div>
+</section>    <!-- </div> -->
+  </header>
+
+  <section class="col-xs-12 col-xs-offset-0"> 
+        <div class="reading blog-body-text">
+     <!--  <h1>  Boss as a Service: The Beginning
+</h1>
+      <hr> -->
+
+  
+  <article class="article">
+    <h1>  Boss as a Service: The Beginning</h1>
+
+    <header>
+      <ul class="list-inline text-muted">
+
+        <li class="list-inline-item" title="2018-04-14T00:00:00+05:30">
+           <img src="/images/manas.jpeg" alt="Avatar" class="avatar"> 
+        </li> 
+       
+        <li class="list-inline-item" title="2018-04-14T00:00:00+05:30">
+          <!-- <i class="fas fa-calendar"></i> -->
+          <span class="text-muted">Sat 14 April 2018</span>
+        </li> | 
+
+          Filed under
+         <li class="list-inline-item">
+          <!-- <i class="fas fa-hashtag"></i> -->
+          <a href="/category/meta.html">Meta</a>
+          <!-- <a href="/category/meta.html">Meta</a> -->
+        </li>
+       
+       <!--            <li class="list-inline-item">
+            <i class="fa fa-user-o"></i>
+              <a href="/author/manasvini-krishna.html">Manasvini Krishna</a>          </li>
+ -->
+        <!--  -->
+         <!--  <li class="list-inline-item">
+           
+              <a href="/tag/meta.html" class="badge badge-warning">#Meta</a>          </li> -->
+        <!--  -->
+      </ul>
+    </header>
+    <div class="content">
+      <p>I’ve always struggled with procrastination, or if I want to be fancy about it, <a href="https://en.wikipedia.org/wiki/Akrasia">akrasia</a>. </p>
+<blockquote>
+<p>Akrasia (/əˈkreɪziə/; Greek ἀκρασία, "lacking command"), occasionally transliterated as acrasia or Anglicised as acrasy or acracy, is described as a lack of self-control or the state of acting against one's better judgment.</p>
+</blockquote>
+<p>Combined with this, I’m also fairly ambitious. I want to do more things, I want to learn more things. </p>
+<h2>The "Perfect Todo App"</h2>
+<p>This is what I wrote in a blog circa 2016. </p>
+<blockquote>
+<p>I am a bit of a productivity nerd. If there's a productivity app out there, chances are I've tried it. For a while, I secretly nourished the belief that the perfect to-do app for me existed. Somewhere out there. And when we meet each other, sparks will fly, it will be a match made in heaven, and someone might make a movie about it. In the end, I decided to just make it myself. While the vision might change a bit, right now it's looking like a more powerful version of Carrot -- an AI that organizes your tasks and ensures you're productive. If you'd like to be notified when this is usable, please let me know here.</p>
+</blockquote>
+<p>I did try to build this vision of "the perfect todo app". I spent several months on it, on and off. But many wasted weekends and many false starts later, I realized something I ought to have understood years back -- that my love of cool UIs and spiffy interactions was leading me astray. </p>
+<p>It doesn't matter how clean and good looking and AI infused (LOL, right.) the app is. At the end of the day, it's no different from the hundreds of other apps out there whose primary purpose is to let you keep a record of your todos. They may organize them, colour code them, give you voice reminders, or roll them in honey and molten candy. It doesn't matter. At the core of it, the value that they offer is, "You can store your todos here."</p>
+<p>And that is not enough.</p>
+<p>Now, I'm not knocking them -- a lot of these apps are wonderfully designed and a delight to use, but my experience with them tends to be this: I sign up, full of excitement, and add a few weeks' worth of tasks to them. I promptly forget all about it. One month later, I find a new one. Now <em>this</em> one will surely work for me! Rinse and repeat.</p>
+<p>It took me years to understand that the number one problem I had (and most people have) with productivity is not "I don't have a place to write my tasks in." It's not even "I don't have a <em>well-designed and inspiring</em> place to write my tasks in." It is "I don't have something that ensures I finish my tasks."</p>
+<blockquote>
+<p>You don’t need another app to write down your todos in. What you need is something that ensures you get your work done.</p>
+</blockquote>
+<p><img alt="Revelation" src="/images/revelation.png" class="img-fluid" ></p>
+<h2>Building BaaS</h2>
+<p>In December 2017, I looked at the year that had just gone by, and felt the familiar sinking feeling of year end panicking. What had I done that year? It seemed like I'd not achieved half of what I wanted to. But for once, instead of reflexively Googling "best todo app task planner", I started thinking about my own trends of productivity. At what point in my life had I actually got things done?</p>
+<p>And one fact immediately leapt out at me -- my productive peak so far was when I worked for someone else. Many factors contributed to this -- the fact that I had very little wiggle room in terms of deadlines, that other people depended on me to finish my work. I got things done, almost on autopilot, because <em>there was no other choice</em>. If I didn't, there would be someone to demand answers. </p>
+<p>On the other hand, when I quit the fulltime job, the day stretched out, seemingly interminable, in front of me every morning. And with nobody to answer to, the <a href="https://en.wikipedia.org/wiki/Parkinson%27s_law">tasks stretched to fit the time available</a>.</p>
+<p>I needed to recreate the pressure, the feeling of accountability I felt when I work for someone else. The simplest way to do this seemed to be to have someone check in on you every day, or when the deadline for your task elapsed, and ask how it went.</p>
+<p>My first instinct was to get a friend to be my "accountability buddy." But I've tried this before, so many times, and it's never ever worked. The hapless friends I managed to bully or bribe into this were busy people, with their own lives to run. How could I expect them to be consistent, and most importantly, be tough on me? They do it for a couple of days to be nice, and then it peters out. And they don't have the heart to call me out when I show up with a complicated and unlikely story of why I couldn't complete my tasks for the week.</p>
+<p>This accountability-buddy thing just doesn't work, and in retrospect, I'm glad I didn't spend more time harassing my friends. I need something consistent, hard nosed, tough. </p>
+<p>I needed ...</p>
+<p>(<em>dramatic music</em>)</p>
+<p>A boss.</p>
+<h2>And BaaS launched!</h2>
+<p>Boss as a Service recreates the feeling of accountability for:</p>
+<ul>
+<li>people who don't already have the boon of a boss in their lives (freelancers, founders, writers, students, anyone who works on their own) </li>
+<li>for areas in life where you don't have a boss checking in on you (self-improvement, learning, fitness, personal goals in general)</li>
+</ul>
+<p>Boss as a Service launched on January 9, 2018. Our first customer (who’s still with us, 3+ months down the line) signed up exactly one hour after the launch. </p>
+<p><img alt="First User" src="/images/first_user.png" class="img-fluid" ></p>
+<p>A more detailed blog on the launch is on the way, but this post was intended to just be an introduction to what this blog is about.</p>
+<h2>What we’ll talk about in this blog</h2>
+<p>First, I promise I won’t talk about BaaS all the time on this blog. We have plans for lots of posts on productivity, fighting procrastination, and getting things done. We want to publish only in-depth, and well-written articles, with a fresh perspective. Because what's the point of adding more nonsense to the ocean of nonsense that exists on the internet about productivity already? That’s one part of it.</p>
+<p>The second kind of articles we'll write is about the inside workings of BaaS as a product (or service). I’ll try my best to be open and transparent about how we’re doing things, and the lessons we learn along the way. So you can expect posts on milestones, launching and marketing, building the product and experiments we're trying out.</p>
+<p>So if you're interested in fighting procrastination, getting better at things, or in how a new product grows, you should sign up below. </p>
+    </div>
+  </article>
+
+    <div class="reading signup-blog">
+      <div class="container text-center">
+        <p class="big-text">Think this makes sense?</p>
+        <p>Add your email here and we'll send you similar articles when we manage to stop procrastinating and write them.</p>
+          <form action="https://life.us18.list-manage.com/subscribe/post-json?u=14cad79873658b6346e7052da&amp;id=c9e90922cc&c=?"
+              method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="scrooge.mcduck@gmail.com" required>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+              </div>
+              <input type="submit" value="Get articles" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+              <div id="subscribe-result">
+              </div>
+          </form>
+      </div>
+    </div>
+  <hr>
+  <div class="comments-div" id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = "https://bossasaservice.life";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "blog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bossasaservice.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+  </section>
+
+   <section class="col-xs-12 col-xs-offset-0 bottom-heading">
+    <div class="reading text-center">
+      <h1 class="blog-title">Boss as a Service</h1>
+      <p>This blog accompanies our productivity service, Boss as a Service. BaaS gives you a real boss to keep tabs on your progress and to follow up when you're slacking off.</p>
+      <a href="https://bossasaservice.life" class="btn btn-default btn-lg">See how it works</a>
+    </div>
+  </section>
+
+  <footer class="footer realfooter">
+   <!--  <div class="container"> -->
+<!-- <div class="row">
+  <ul class="col-sm-6 list-inline">
+      <li class="list-inline-item"><a href="/authors.html">Authors</a></li>
+    <li class="list-inline-item"><a href="/archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="/categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="/tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>
+ -->
+
+<!-- 
+<footer class="realfooter"> -->
+ <p class="text-center">Made with <i class="fas fa-heart"></i> and inordinate amounts of <i class="fas fa-coffee"></i> by <a href="https://twitter.com/Manasvinik">@manasvinik</a>.</p>
+ <p class="text-center">This blog is proudly powered by <a href="https://github.com/getpelican/pelican">Pelican</a>.</p>
+<!-- </footer> -->    <!-- </div> -->
+  </footer>
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" type="text/javascript"></script>
+     <script src="https://cdn.rawgit.com/BlackrockDigital/startbootstrap-scrolling-nav/9f670f2e/js/scrolling-nav.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

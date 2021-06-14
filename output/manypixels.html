@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- HTML Meta Tags -->
+    <title>Boss as a Service | Hire a boss, get stuff done</title>
+    <meta name="description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta itemprop="description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta itemprop="image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://bossasaservice.life">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta property="og:description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta property="og:image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta name="twitter:description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta name="twitter:image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/theme/images/icons/favicon.png" type="image/x-icon">
+
+  <!-- <title>  How the Founder of Manypixels uses Boss as a Service | Boss as a Service
+</title> -->
+  <link rel="canonical" href="/manypixels.html">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="/theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="/theme/css/theme.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:40,600" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+  <meta name="description" content="Robin Vander Hayden, the founder of Manypixels, talks about how he uses Boss as a Service, and productivity in general">
+
+  <!-- https://codepen.io/anon/pen/aYPqEV -->
+
+  <script type="text/javascript">
+    
+    $(document).ready(function () {
+        var $form = $('#mc-embedded-subscribe-form')
+        if ($form.length > 0) {
+          $('form input[type="submit"]').bind('click', function (event) {
+            if (event) event.preventDefault()
+            register($form)
+          })
+        }
+      })
+
+      function register($form) {
+        $('#mc-embedded-subscribe').val('Robots Chomping...');
+        $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          cache: false,
+          dataType: 'json',
+          contentType: 'application/json; charset=utf-8',
+          error: function (err) { alert('Could not connect to the registration server. Please try again later.', err) },
+          success: function (data) {
+            $('#mc-embedded-subscribe').val('subscribe')
+            if (data.result === 'success') {
+              // Yeahhhh Success
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ffffff')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#27ae60')
+              $('#subscribe-result').html('<p>Thank you for subscribing. We will send you nothing but the most freshly brewed, fragrant articles on how to get things done.</p>')
+              $('#mce-EMAIL').val('')
+            } else {
+              // Something went wrong, do something to notify the user.
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ff8282')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#E73737')
+              $('#subscribe-result').html('<p>' + data.msg + '</p>')
+            }
+          }
+        })
+      };
+
+</script>
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a href="/" class="navbar-brand d-flex w-50 mr-auto">
+        <span style="font-weight: 700; margin:0px 5px">Boss</span> As a <span style="font-weight: 700;margin: 0px 5px;"> Service</span>
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+             <!-- <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#howitworks">How it works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="https://bossasaservice.life/" class="btn btn-success">Join Boss As A Service</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <header class="header">
+   <!--  <div class="container"> -->
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <h1 class="title"><a href="/">Boss as a Service</a></h1>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://getpelican.com/" target="_blank">Pelican</a></li>
+          <li class="list-inline-item"><a href="https://www.python.org/" target="_blank">Python.org</a></li>
+          <li class="list-inline-item"><a href="https://palletsprojects.com/p/jinja/" target="_blank">Jinja2</a></li>
+          <li class="list-inline-item"><a href="#" target="_blank">You can modify those links in your config file</a></li>
+      </ul>
+  </div>
+</div> -->
+
+
+<section class="jumbo-blog col-xs-12 col-xs-offset-0 page-heading">
+  <div class="reading">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h1 class="blog-title">BaaS Blog</h1>
+        <p>A Blog about Productivity, Getting Stuff Done, and Keeping Sane While Trying to be Exceptional</p>
+        </div>
+      <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
+        <img src="/images/superhero.svg" class="rounded float-right header-superhero"> 
+      </div>
+    </div>
+  </div>
+</section>    <!-- </div> -->
+  </header>
+
+  <section class="col-xs-12 col-xs-offset-0"> 
+        <div class="reading blog-body-text">
+     <!--  <h1>  How the Founder of Manypixels uses Boss as a Service
+</h1>
+      <hr> -->
+
+  
+  <article class="article">
+    <h1>  How the Founder of Manypixels uses Boss as a Service</h1>
+
+    <header>
+      <ul class="list-inline text-muted">
+
+        <li class="list-inline-item" title="2018-06-01T00:00:00+05:30">
+           <img src="/images/manas.jpeg" alt="Avatar" class="avatar"> 
+        </li> 
+       
+        <li class="list-inline-item" title="2018-06-01T00:00:00+05:30">
+          <!-- <i class="fas fa-calendar"></i> -->
+          <span class="text-muted">Fri 01 June 2018</span>
+        </li> | 
+
+          Filed under
+         <li class="list-inline-item">
+          <!-- <i class="fas fa-hashtag"></i> -->
+          <a href="/category/case-study.html">Case Study</a>
+          <!-- <a href="/category/case-study.html">Case Study</a> -->
+        </li>
+       
+       <!--            <li class="list-inline-item">
+            <i class="fa fa-user-o"></i>
+              <a href="/author/manasvini-krishna.html">Manasvini Krishna</a>          </li>
+ -->
+        <!--  -->
+         <!--  <li class="list-inline-item">
+           
+              <a href="/tag/case-study.html" class="badge badge-warning">#Case Study</a>          </li> -->
+        <!--  -->
+      </ul>
+    </header>
+    <div class="content">
+      <p><em>One of our most productive users is Robin, the founder of <a href="https://www.manypixels.co/">Manypixels</a>. Robin is a machine. He routinely gets through an average of 20-25 tasks a day. He's also scaled Manypixels to $50,000 in monthly revenues in under 6 months, without working weekends, and while taking trips across Asia. We caught up with him to ask how he does it, and how he uses Boss as a Service.</em></p>
+<h2>Tell us a little about yourself!</h2>
+<p>I am Robin, from Belgium, though I currently live in Asia where I run my current company: <a href="https://www.manypixels.co/">Manypixels</a>, a subscription-based design service for startup companies. For a fixed fee per month we produce high quality design work (from UI/UX to powerpoint presentations, to illustrations, etc etc). </p>
+<p><img alt="Office View" src="/images/manypixels-off.jpg" class="img-fluid" ></p>
+<div class="caption text-center text-muted">View from our office!</div>
+
+<h2>What does a typical day in your life look like?</h2>
+<p>My typical day for me starts at 8 or 9 am. I usually start my day by checking the news on my phone while still in bed and check Stripe to see the revenues we have made in the previous day. I have breakfast at home and then commute to work where I usually open my laptop and work for about 20-30 mins mostly on planning my day ahead and answering a few urgent emails.</p>
+<p>I arrive at the office around 10 am and mostly spend the first two hours of my day talking to the team. After that I have lunch at office and do some deep focused work after such as writing a blog post, reviewing a critical part of the company that we need to improve, or experimenting with a new sales channel. I usually do 2-3 tasks similar to that, then end my day with admin tasks that I can’t delegate.</p>
+<p><img alt="Working" src="/images/manypixels-off2.jpg" class="img-fluid" ></p>
+<div class="caption text-center text-muted">The Manypixels office</div>
+
+<p>We meet with the team in our office space (see pictures) at least every Tuesday where I talk 1-on-1 with everyone for at least 15-20 min to identify a couple of obstacles/things they’ve been working on/things they’ll work on. It’s also a moment for them to share their ideas.</p>
+<p>Our Head of Production also uses that day to review and empower the team of project managers and our Head Quality makes 30min to 1 hour trainings to our project managers to improve their overall performance and client satisfaction.</p>
+<p><img alt="Office View" src="/images/manypixels-off5.jpg" class="img-fluid" ></p>
+<div class="caption text-center text-muted">Another One! :)</div>
+
+<p>Our team consists of 5 project managers, 1 Head of Quality (reviewing designer works, training project managers) and 1 Head of Production (managing the whole production of designers) as well as one admin assistant who is doing things such as answering emails, answering the live chats, and helping with direct sales and other admin tasks. We also have designers who are located in various cities but they do not come to our office. </p>
+<p>I usually go myself to the office every day of the week (Monday to Friday) and stay at the office until 5 or 6pm (so working about 8 hours a day), but there are days that I work until 8 or 9pm. Rarely I will work until midnight or 1am but only if I really did not plan my tasks well. I really like going to the office, it's a super productive environment for me (and it has a beautiful view over the city) and I feel it is empowering. However, some days I like to work at Starbucks when I start that I have a routine. I also sometimes take city trips to some cities in Asia (Bangkok, Hong Kong) and usually also choose Starbucks or a co-working space. This helps me refresh my mind though I am mostly a little less productive as traveling adds on a lot of transaction costs.</p>
+<h2>Do you have issues with procrastination and getting work done?</h2>
+<p>Before using BaaS I always used a note file or a written to-do and kept adding items on the list without really having a system to complete them. At the end of the day I would feel exhausted and thought I would do some of the task the next day.</p>
+<p>Now, my productivity has greatly improved. I feel I work on the right stuff, avoid a lot of distractions (I turn off my phone during the day and rarely check Facebook), and have a feeling I accomplish a lot. The only thing is that I still have to find the right balance: I sometimes end up over scheduling myself and some days I am completely burn out. </p>
+<h2>Why did you sign up for Boss as a Service?</h2>
+<p>First of all, I thought the service was fun. I signed up a little bit as a joke but then I realised there is a lot of value in it and having a boss as an entrepreneur. It’s not only about sending your tasks each day and having someone to remind you of completing them — It’s about really empowering you to be productive, like a real boss would with his employees. </p>
+<p>BaaS empowers me to be productive in two ways:</p>
+<ol>
+<li>
+<p>Daily cheering up and weekly summaries — It feels great after you’ve done a bunch of tasks to have someone that tells you “WOW Congrats Robin! One more day of accomplished tasks, you’re on a streak!).</p>
+</li>
+<li>
+<p>Planning of tasks — The second (and probably most important thing) is that each day you have to plan your tasks. That has two benefits for me: First, writing tasks help me structure my day and why I would do such tasks. Secondly, it keeps “momentum” that is well needed in staying productive. </p>
+</li>
+</ol>
+<h2>How do you use BaaS?</h2>
+<p>I usually send a list of tasks each working day. This is my first task in the morning: Telling my boss what I will be working on during the day. I spend 15-20min planning my day ahead.</p>
+<h2>Is there a difference between the way you worked before and after signing up with BaaS?</h2>
+<p>Definitely! </p>
+<p>While it is hard for me to gauge quantitatively my productivity increase I feel that BaaS gives me the motivational boost and momentum to keep me going. </p>
+<p>I also realise I do the boring tasks that I do not want to do and can’t delegate that easily. For example: Calling my accountant, posting a job ad, etc. I hate doing those little things and usually I’d postpone them but now I do ship them as well.</p>
+<h2>How do you come up with the list of tasks you send to BaaS every morning?</h2>
+<p>I really like using lists. I work on 3 main things each day: Pushing team and setting the execution bar, talking to existing customers and experimenting on sales, and setting up the vision of the team/working on a critical moving part of the company. Then I throw in a few admin tasks I can’t easily delegate (usually at the end of the day).</p>
+<p>Then I also have a note file with about 20-25 items at anytime I should be working on. I complete that big list with ideas I have during the day and try to keep it as simple as possible. If my list becomes too big, I usually think it’s a red flag that I do not know what I am doing.</p>
+<p>My goal is simple: Make sure the company wins. I need to make sure my team is empowered and ultra motivated to do their work, that we exceed the expectations of our  customers, and that we are working on the right things / going into the right direction. </p>
+<p>Specifically as regard to company goal: Hit 1 million in ARR. Right now we still are a lifestyle business but have a lot of things to figure out still to achieve velocity and grow nicely. The goal is to hit 1 million in ARR. We also have team specific goals that we set 2 or 3 months ahead. We have a weekly Skype with our team where we discuss of progress (things we’ve achieved in the past week and things we want to do in the next week).</p>
+<p><img alt="Office View" src="/images/tasklist_robin.jpg" class="img-fluid" ></p>
+<div class="caption text-center text-muted">A day's list of tasks</div>
+
+<h2>Have you evolved and settled on a system of productivity that works for you? How did you create this?</h2>
+<p>I think the foundation of being productive is working on the right things. One way to figure this out is to constantly ask really good questions to your team and customers. For example, I actively reach out to customers every now and then and ask them “What is your single biggest frustration currently with Manypixels?” Or “What would be your dream use of Manypixels?”.</p>
+<p>Then finally I write a lot on the blog and write a couple of emails each months to other founders / company employees I am friend with. Then write a long email with some food for thought.</p>
+<p>I think this process of being introspective (writing on the blog) + get help from others + Insights from customers/employees forms a good foundation to help me steer the wheel of the ship.</p>
+<h2>You’ve been very productive, to say the least, in scaling Manypixels in such a short period of time. What’s the single most important thing that’s helped you do the work?</h2>
+<p>I think think the single thing that has helped me do a lot is working on the right thing and having that “never content” mood on my face. </p>
+<p>Before Manypixels, I did not know what I was doing and was trying a lot of things here and there, but now have a clearer picture of where my project needs to go and just need to execute on the tasks, delegate some of them, talk to customers and empower the team/make sure we’re an attractive company and attract the top talent to join us (I know — it’s a lot!). Before that, I could have been productive but I had a lot of question marks: Is it going to work? Is it going to make money? How should I do X and Y?</p>
+<p>This phase is usually a lot of experiments and talking to everyone and I felt sometimes not a lot was going on because I did not have a business that worked yet.</p>
+<h2>You get through a huge amount of work everyday! Do you have a favourite go to “productivity hack”? Or a mental model that helps in getting things done?</h2>
+<p>I would say: Avoid switching between tasks. I think I read something that there is a “productivity flow”. Once you’re a couple of mins into a task you start being “in the flow” and can do deep, focused work. But if you keep having ideas or switching between tasks that adds a lot of transaction costs and makes you unfocused on the task at hand.</p>
+<p>I have a few mental models that mostly help me make decisions on a day to day basis when working or solving problems. For example : Inversion technique, or Falsificaiton (to avoid the confirmation bias) which I really like.</p>
+<p>When I work on vision-strategy tasks I also like to use the second-order thinking mental model or costs/benefits analysis. Finally I also use the Availability heuristic model.</p>
+<p>To conclude, I also try to often have 360 degrees thoughts about myself. I know I am good at analysing issues qualitatively and that my law degree helped me be really analytical and identify issues but my quantitative skills are not as good. So I compensate with that by having a good team who can compensate my weaknesses.</p>
+<p>The blog I read the most are <a href="https://www.brainpickings.org/">BrainPickings</a> by Maria Polopova (more on philosophy) and <a href="https://www.fs.blog/">Farnam Street</a> on Mental Models. I also like <a href="https://stratechery.com/">Stratechery</a> for tech analysis. I rarely read business books but I do love fiction books.</p>
+<h2>Where can we learn more about you?</h2>
+<p>My twitter is <a href="https://twitter.com/Vinrob">@Vinrob</a> and here's our <a href="https://blog.manypixels.co/">blog</a>. I also sometimes blog at <a href="http://vinrob.co/">Vinrob.co</a>.</p>
+<p><img alt="Office View" src="/images/manypixels-off6.jpg" class="img-fluid" ></p>
+<div class="caption text-center text-muted">The Manypixels team together!</div>
+    </div>
+  </article>
+
+    <div class="reading signup-blog">
+      <div class="container text-center">
+        <p class="big-text">Think this makes sense?</p>
+        <p>Add your email here and we'll send you similar articles when we manage to stop procrastinating and write them.</p>
+          <form action="https://life.us18.list-manage.com/subscribe/post-json?u=14cad79873658b6346e7052da&amp;id=c9e90922cc&c=?"
+              method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="scrooge.mcduck@gmail.com" required>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+              </div>
+              <input type="submit" value="Get articles" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+              <div id="subscribe-result">
+              </div>
+          </form>
+      </div>
+    </div>
+  <hr>
+  <div class="comments-div" id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = "https://bossasaservice.life";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "blog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bossasaservice.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+  </section>
+
+   <section class="col-xs-12 col-xs-offset-0 bottom-heading">
+    <div class="reading text-center">
+      <h1 class="blog-title">Boss as a Service</h1>
+      <p>This blog accompanies our productivity service, Boss as a Service. BaaS gives you a real boss to keep tabs on your progress and to follow up when you're slacking off.</p>
+      <a href="https://bossasaservice.life" class="btn btn-default btn-lg">See how it works</a>
+    </div>
+  </section>
+
+  <footer class="footer realfooter">
+   <!--  <div class="container"> -->
+<!-- <div class="row">
+  <ul class="col-sm-6 list-inline">
+      <li class="list-inline-item"><a href="/authors.html">Authors</a></li>
+    <li class="list-inline-item"><a href="/archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="/categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="/tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>
+ -->
+
+<!-- 
+<footer class="realfooter"> -->
+ <p class="text-center">Made with <i class="fas fa-heart"></i> and inordinate amounts of <i class="fas fa-coffee"></i> by <a href="https://twitter.com/Manasvinik">@manasvinik</a>.</p>
+ <p class="text-center">This blog is proudly powered by <a href="https://github.com/getpelican/pelican">Pelican</a>.</p>
+<!-- </footer> -->    <!-- </div> -->
+  </footer>
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" type="text/javascript"></script>
+     <script src="https://cdn.rawgit.com/BlackrockDigital/startbootstrap-scrolling-nav/9f670f2e/js/scrolling-nav.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

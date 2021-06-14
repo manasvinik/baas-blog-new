@@ -1,0 +1,51 @@
+<!-- <div class="row">
+  {% if SITEIMAGE %}
+    <div class="col-sm-4">
+      <a href="{{ SITEURL }}/">
+        <img class="img-fluid rounded" src={{ SITEURL }}{{ SITEIMAGE }} alt="{{ SITENAME }}">
+      </a>
+    </div>
+  {% endif %}
+  <div class="col-sm-{% if SITEIMAGE %}8{% else %}12{% endif %}">
+    <h1 class="title"><a href="{{ SITEURL }}/">{{ SITENAME }}</a></h1>
+    {% if SITESUBTITLE %}
+      <p class="text-muted">{{ SITESUBTITLE }}</p>
+    {% endif %}
+    {% if LINKS or (DISPLAY_PAGES_ON_MENU and pages) or ICONS %}
+      <ul class="list-inline">
+        {% for title, link in LINKS %}
+          <li class="list-inline-item"><a href="{{ link }}" target="_blank">{{ title }}</a></li>
+        {% endfor %}
+        {% if DISPLAY_PAGES_ON_MENU %}
+          {% for page in pages %}
+            {% if LINKS and loop.first %}
+              <li class="list-inline-item text-muted">|</li>
+            {% endif %}
+            <li class="list-inline-item"><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+          {% endfor %}
+        {% endif %}
+        {% for icon, link in ICONS %}
+          {% if (LINKS or (DISPLAY_PAGES_ON_MENU and pages)) and loop.first %}
+            <li class=" list-inline-item text-muted">|</li>
+          {% endif %}
+          <li class="list-inline-item"><a class="fa fa-{{ icon }}" href="{{ link }}" target="_blank"></a></li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+</div> -->
+
+
+<section class="jumbo-blog col-xs-12 col-xs-offset-0 page-heading">
+  <div class="reading">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h1 class="blog-title">BaaS Blog</h1>
+        <p>A Blog about Productivity, Getting Stuff Done, and Keeping Sane While Trying to be Exceptional</p>
+        </div>
+      <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
+        <img src="/images/superhero.svg" class="rounded float-right header-superhero"> 
+      </div>
+    </div>
+  </div>
+</section>

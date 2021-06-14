@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- HTML Meta Tags -->
+    <title>Boss as a Service | Hire a boss, get stuff done</title>
+    <meta name="description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta itemprop="description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta itemprop="image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://bossasaservice.life">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta property="og:description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta property="og:image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Boss as a Service | Hire a boss, get stuff done">
+    <meta name="twitter:description" content="BaaS helps you achieve your goals, making sure that you follow through on what you plan.">
+    <meta name="twitter:image" content="https://i.imgur.com/jjrWC3a.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/theme/images/icons/favicon.png" type="image/x-icon">
+
+  <!-- <title>  Beeminder integration is here - Use BaaS + Beeminder together | Boss as a Service
+</title> -->
+  <link rel="canonical" href="/beeminder-integration.html">
+
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="stylesheet" href="/theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="/theme/css/theme.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:40,600" rel="stylesheet">
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  
+  <meta name="description" content="How you can use BaaS + Beeminder to weaselproof your life.">
+
+  <!-- https://codepen.io/anon/pen/aYPqEV -->
+
+  <script type="text/javascript">
+    
+    $(document).ready(function () {
+        var $form = $('#mc-embedded-subscribe-form')
+        if ($form.length > 0) {
+          $('form input[type="submit"]').bind('click', function (event) {
+            if (event) event.preventDefault()
+            register($form)
+          })
+        }
+      })
+
+      function register($form) {
+        $('#mc-embedded-subscribe').val('Robots Chomping...');
+        $.ajax({
+          type: $form.attr('method'),
+          url: $form.attr('action'),
+          data: $form.serialize(),
+          cache: false,
+          dataType: 'json',
+          contentType: 'application/json; charset=utf-8',
+          error: function (err) { alert('Could not connect to the registration server. Please try again later.', err) },
+          success: function (data) {
+            $('#mc-embedded-subscribe').val('subscribe')
+            if (data.result === 'success') {
+              // Yeahhhh Success
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ffffff')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#27ae60')
+              $('#subscribe-result').html('<p>Thank you for subscribing. We will send you nothing but the most freshly brewed, fragrant articles on how to get things done.</p>')
+              $('#mce-EMAIL').val('')
+            } else {
+              // Something went wrong, do something to notify the user.
+              // console.log(data.msg)
+              $('#mce-EMAIL').css('borderColor', '#ff8282')
+              $('#subscribe-result').css('background-color', '#fff')
+              $('#subscribe-result').css('color', '#E73737')
+              $('#subscribe-result').html('<p>' + data.msg + '</p>')
+            }
+          }
+        })
+      };
+
+</script>
+
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a href="/" class="navbar-brand d-flex w-50 mr-auto">
+        <span style="font-weight: 700; margin:0px 5px">Boss</span> As a <span style="font-weight: 700;margin: 0px 5px;"> Service</span>
+      </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="collapsingNavbar3">
+        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+             <!-- <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#howitworks">How it works</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="#faqs">FAQs</a>
+            </li> -->
+            <li class="nav-item">
+              <a href="https://bossasaservice.life/" class="btn btn-success">Join Boss As A Service</a>
+            </li>
+        </ul>
+    </div>
+  </nav>
+  <header class="header">
+   <!--  <div class="container"> -->
+<!-- <div class="row">
+  <div class="col-sm-12">
+    <h1 class="title"><a href="/">Boss as a Service</a></h1>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="https://getpelican.com/" target="_blank">Pelican</a></li>
+          <li class="list-inline-item"><a href="https://www.python.org/" target="_blank">Python.org</a></li>
+          <li class="list-inline-item"><a href="https://palletsprojects.com/p/jinja/" target="_blank">Jinja2</a></li>
+          <li class="list-inline-item"><a href="#" target="_blank">You can modify those links in your config file</a></li>
+      </ul>
+  </div>
+</div> -->
+
+
+<section class="jumbo-blog col-xs-12 col-xs-offset-0 page-heading">
+  <div class="reading">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <h1 class="blog-title">BaaS Blog</h1>
+        <p>A Blog about Productivity, Getting Stuff Done, and Keeping Sane While Trying to be Exceptional</p>
+        </div>
+      <div class="col-lg-6 col-md-6 d-none d-md-block d-lg-block">
+        <img src="/images/superhero.svg" class="rounded float-right header-superhero"> 
+      </div>
+    </div>
+  </div>
+</section>    <!-- </div> -->
+  </header>
+
+  <section class="col-xs-12 col-xs-offset-0"> 
+        <div class="reading blog-body-text">
+     <!--  <h1>  Beeminder integration is here - Use BaaS + Beeminder together
+</h1>
+      <hr> -->
+
+  
+  <article class="article">
+    <h1>  Beeminder integration is here - Use BaaS + Beeminder together</h1>
+
+    <header>
+      <ul class="list-inline text-muted">
+
+        <li class="list-inline-item" title="2020-08-12T00:00:00+05:30">
+           <img src="/images/manas.jpeg" alt="Avatar" class="avatar"> 
+        </li> 
+       
+        <li class="list-inline-item" title="2020-08-12T00:00:00+05:30">
+          <!-- <i class="fas fa-calendar"></i> -->
+          <span class="text-muted">Wed 12 August 2020</span>
+        </li> | 
+
+          Filed under
+         <li class="list-inline-item">
+          <!-- <i class="fas fa-hashtag"></i> -->
+          <a href="/category/meta.html">Meta</a>
+          <!-- <a href="/category/meta.html">Meta</a> -->
+        </li>
+       
+       <!--            <li class="list-inline-item">
+            <i class="fa fa-user-o"></i>
+              <a href="/author/manasvini-krishna.html">Manasvini Krishna</a>          </li>
+ -->
+        <!--  -->
+         <!--  <li class="list-inline-item">
+           
+              <a href="/tag/meta.html" class="badge badge-warning">#Meta</a>          </li> -->
+        <!--  -->
+      </ul>
+    </header>
+    <div class="content">
+      <p>Now we have an official integration with Beeminder! Super excited about this!</p>
+<p>Together, BaaS + Beeminder can be very potent tools in your arsenal.</p>
+<p><a href="https://beeminder.com">Beeminder</a>, in case you haven't tried it before, is an amazing tool that charges money when you don't do what you commit to. But it's just not about negative reinforcement and a commitment contract - it's a powerful system with graphs, quantified-self nerdery, and a lovely supporting community.</p>
+<p>Where does BaaS come in? - you can use BaaS to add an extra layer of accountability between you and your Beeminder goal, to keep you honest and more accountable!</p>
+<p>Read how you can set this system up on the <a href="https://blog.beeminder.com/baas/">official blogpost on the Beeminder blog</a> and on <a href="beeminder.com/baas">the landing page here</a>! :)</p>
+<p>And if you have any questions on how to make it work better for you, drop us a message! :)</p>
+    </div>
+  </article>
+
+    <div class="reading signup-blog">
+      <div class="container text-center">
+        <p class="big-text">Think this makes sense?</p>
+        <p>Add your email here and we'll send you similar articles when we manage to stop procrastinating and write them.</p>
+          <form action="https://life.us18.list-manage.com/subscribe/post-json?u=14cad79873658b6346e7052da&amp;id=c9e90922cc&c=?"
+              method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
+              <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="scrooge.mcduck@gmail.com" required>
+              <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                  <input type="text" name="b_e44c1f194bec93e238615469e_f6f826e769" tabindex="-1" value="">
+              </div>
+              <input type="submit" value="Get articles" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
+              <div id="subscribe-result">
+              </div>
+          </form>
+      </div>
+    </div>
+  <hr>
+  <div class="comments-div" id="disqus_thread"></div>
+        <script>
+        var disqus_config = function () {
+        this.page.url = "https://bossasaservice.life";  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = "blog"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://bossasaservice.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+    </div>
+  </section>
+
+   <section class="col-xs-12 col-xs-offset-0 bottom-heading">
+    <div class="reading text-center">
+      <h1 class="blog-title">Boss as a Service</h1>
+      <p>This blog accompanies our productivity service, Boss as a Service. BaaS gives you a real boss to keep tabs on your progress and to follow up when you're slacking off.</p>
+      <a href="https://bossasaservice.life" class="btn btn-default btn-lg">See how it works</a>
+    </div>
+  </section>
+
+  <footer class="footer realfooter">
+   <!--  <div class="container"> -->
+<!-- <div class="row">
+  <ul class="col-sm-6 list-inline">
+      <li class="list-inline-item"><a href="/authors.html">Authors</a></li>
+    <li class="list-inline-item"><a href="/archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="/categories.html">Categories</a></li>
+      <li class="list-inline-item"><a href="/tags.html">Tags</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>
+ -->
+
+<!-- 
+<footer class="realfooter"> -->
+ <p class="text-center">Made with <i class="fas fa-heart"></i> and inordinate amounts of <i class="fas fa-coffee"></i> by <a href="https://twitter.com/Manasvinik">@manasvinik</a>.</p>
+ <p class="text-center">This blog is proudly powered by <a href="https://github.com/getpelican/pelican">Pelican</a>.</p>
+<!-- </footer> -->    <!-- </div> -->
+  </footer>
+
+   <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" type="text/javascript"></script>
+     <script src="https://cdn.rawgit.com/BlackrockDigital/startbootstrap-scrolling-nav/9f670f2e/js/scrolling-nav.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

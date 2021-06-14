@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block head %}
+  {{ super() }}
+  {% if DESCRIPTION %}
+    <meta name="description" content="{{ DESCRIPTION|striptags }}">
+  {% endif %}
+{% endblock %}
+
+{% block title %}
+  {{ SITENAME }} | {{ SITESUBTITLE }}
+{% endblock %}
+
+
+
+{% block page_header %}
+  Articles
+{% endblock %}
+
+{% block content %}
+
+ 
+    <main role="main" class="container">
+      <div class="row">
+        <div class="col-md-9 no-pad">
+         <div class="blog-post">
+            {% for article in articles_page.object_list %}
+                <article class="row teaser reading">
+                  <div class="col-sm-12 card post-card" style="margin:0px;">
+                  <div class="card-body">
+                   <strong class="d-inline-block mb-2 text-primary"><a href="{{ SITEURL }}/{{ article.category.url }}"><span class="badge badge-secondary">{{ article.category }}</span></a></strong>
+                    <h4 class="title">
+                      <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                    </h4>
+                    <p class="text-muted">{{ article.locale_date }}
+                    <!--  | <a href="{{ SITEURL }}/{{ article.category.url }}"><span class="badge badge-secondary">{{ article.category }}</span></a> -->
+                     </p>
+                    <div class="content">
+                      {{ article.summary|striptags }}
+                    </div>
+                  </div>
+                  </div>
+                </article>
+                {% if not loop.last %}
+                  <hr>
+                {% endif %}
+            {% endfor %}
+         </div>
+        </div>
+
+        <aside class="col-md-3 blog-sidebar no-pad text-right">
+          <div class="p-3">
+            <h4 class="font-italic">Archives</h4>
+            <ol class="list-unstyled mb-0">
+             {% for category, articles in categories|sort %}
+              <li><a href="{{ SITEURL }}/{{ category.url }}">{{ category }}</a> ({{ articles|count }})</li>
+              {% endfor %}
+            </ol>
+          </div>
+        </aside><!-- /.blog-sidebar -->
+
+      </div><!-- /.row -->
+
+    </main><!-- /.container -->
+
+{% include 'include/pagination.html' %}
+ 
+{% endblock %}
+
+
+
