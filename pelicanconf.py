@@ -3,7 +3,7 @@
 
 AUTHOR = 'Manasvini Krishna'
 SITENAME = 'Boss as a Service'
-SITEURL = 'https://blog.bossasaservice.life'
+# SITEURL = 'https://blog.bossasaservice.life'
 
 PATH = 'content'
 
@@ -37,4 +37,3 @@ DEFAULT_PAGINATION = 10
 THEME = "themes/pelican-alchemy/alchemy"
 
 DISQUS_SITENAME = "bossasaservice"
-
