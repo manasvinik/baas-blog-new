@@ -3,7 +3,7 @@
 
 AUTHOR = 'Manasvini Krishna'
 SITENAME = 'Boss as a Service'
-SITEURL = ''
+SITEURL = 'https://blog.bossasaservice.life'
 
 PATH = 'content'
 
