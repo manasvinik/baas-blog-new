@@ -41,7 +41,7 @@ section {
 
 
 .btn {
-  border-radius: 22px;
+  /* border-radius: 22px; */
   font-weight: 700;
   padding: 8px 22px;
 }
