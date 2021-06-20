@@ -6,8 +6,8 @@
 
   <!-- https://codepen.io/anon/pen/aYPqEV -->
 
-  <script type="text/javascript">
-    
+  <!-- <script type="text/javascript">
+
     $(document).ready(function () {
         var $form = $('#mc-embedded-subscribe-form')
         if ($form.length > 0) {
@@ -50,7 +50,7 @@
         })
       };
 
-</script>
+</script> -->
 
 
 {% endblock %}
@@ -65,7 +65,7 @@
 
 {% block content %}
 
-  
+
   <article class="article">
     <h1>  {{ article.title }}</h1>
 
@@ -73,13 +73,13 @@
       <ul class="list-inline text-muted">
 
         <li class="list-inline-item" title="{{ article.date.isoformat() }}">
-           <img src="/images/manas.jpeg" alt="Avatar" class="avatar"> 
-        </li> 
-       
+           <img src="/images/manas.jpeg" alt="Avatar" class="avatar">
+        </li>
+
         <li class="list-inline-item" title="{{ article.date.isoformat() }}">
           <!-- <i class="fas fa-calendar"></i> -->
           <span class="text-muted">{{ article.locale_date }}</span>
-        </li> | 
+        </li> |
 
           Filed under
          <li class="list-inline-item">
@@ -87,7 +87,7 @@
           <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
           <!-- <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a> -->
         </li>
-       
+
        <!--  {% if not HIDE_AUTHORS and article.authors %}
           <li class="list-inline-item">
             <i class="fa fa-user-o"></i>
@@ -98,7 +98,7 @@
         {% endif %} -->
         <!-- {% if article.tags %} -->
          <!--  <li class="list-inline-item">
-           
+
             {% for tag in article.tags %}
               <a href="{{ SITEURL }}/{{ tag.url }}" class="badge badge-warning">#{{ tag }}</a>{% if not loop.last %}, {% endif %}
             {% endfor %}
@@ -115,7 +115,14 @@
       <div class="container text-center">
         <p class="big-text">Think this makes sense?</p>
         <p>Add your email here and we'll send you similar articles when we manage to stop procrastinating and write them.</p>
-          <form action="https://life.us18.list-manage.com/subscribe/post-json?u=14cad79873658b6346e7052da&amp;id=c9e90922cc&c=?"
+
+
+        <div class="ml-form-embed"
+              data-account="3000211:s3t1l3a6d1"
+              data-form="4290568:d9k0t4">
+        </div>
+
+          <!-- <form action="https://life.us18.list-manage.com/subscribe/post-json?u=14cad79873658b6346e7052da&amp;id=c9e90922cc&c=?"
               method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate">
               <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="scrooge.mcduck@gmail.com" required>
               <div style="position: absolute; left: -5000px;" aria-hidden="true">
@@ -124,8 +131,17 @@
               <input type="submit" value="Get articles" name="subscribe" id="mc-embedded-subscribe" class="mc-button">
               <div id="subscribe-result">
               </div>
-          </form>
+          </form> -->
+
+
+
+
       </div>
     </div>
+
+
+
+
+
   {% include 'include/comments.html' %}
 {% endblock %}
